@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+body{
+    position: relative;
+    background: #f0f0f0;
+    font-family: 'robot','sans-serif';
+
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 2vw;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+   
+}
+#toggle{
+    width: 40px;
+    border: 0px solid;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+}
+#toggle span{
+    position: absolute;
+    width: 100%;
+    height: 2.1px;
+    top: 50%;
+    transform: translate(-50%);
+    background: #979797;
+
+}
+#toggle span:nth-child(1){
+top: 0;
+}
+#toggle span:nth-child(3){
+    top: 100%;
+}
+#logo{
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+}
+.search-box{
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin-left: 200px;
+}
+#search{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+#s{
+    width: 90%;
+    height: 100%;
+    border: none;
+
+}
+#button{
+   
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    border-left: none;
+    
+   
+}
+.setting{
+    width: 20px;
+    border: 0px solid;
+    height: 10px;
+    gap: 50px;
+    position: relative;
+    cursor: pointer;
+    justify-content: right;
+    align-items: center;
+    
+
+    
+}
+.setting span{
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    top: 50%;
+    background: #1f1d1d;
+}
+.setting span:nth-child(1){
+    top: 0;
+    }
+ .setting span:nth-child(3){
+        top: 100%;
+    }
+
+ .icon{
+margin-top: 5px;
+height: 60%;
+cursor: pointer;
+margin-left: 20px;
+border-radius: 40%;
+
+}
+.user-pic{
+    height: 50px;
+    width: 55%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.user-pic img{
+   
+    height: 100%;
+}
+.searchdisplay {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-left:250px;
+    margin-top: 150px;
+    
+  }
+
+/*  Side Bar*/
+.side-bar{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    min-width: 250px;
+    width: 100px;
+    height: calc(100vh -60px);
+    background: rgb(248, 248, 248);
+    padding-right: 10px;
+}
+
+.link{
+    display: block;
+  
+    height: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #242424;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.link img{
+    height: 25px;
+    margin-right: 20px;
+}
+#link-active, .link:hover{
+    background-color: rgb(182, 182, 182);
+    
+}
+.divider{
+ border: none;
+ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ margin: 20px 0;
+}
+.filter{
+    position: fixed;
+    left: 250px;
+    top: 60px;
+    width: calc(100% - 250px);
+    height: 60px;
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+}
+.filter::-webkit-scrollbar{
+    display: none;
+}
+.filter-option{
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #f0f0f0;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    margin-right: 10px;
+    color: #242424;
+    font-size: 15px;
+    cursor: pointer;
+}
+ .active{
+    background-color: black;
+    color: white;
+}
+.filter-option:hover
+{
+    background: #dbdbdb;
+}
+
+/*  Video Container*/
+.video-container{
+    width: calc(100% - 250px);
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 20px 5px;
+    overflow-x: hidden;
+}
+.video{
+    min-width: 250px;
+    height: auto;
+}
+#content{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
